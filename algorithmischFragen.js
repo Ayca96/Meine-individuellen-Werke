@@ -1,4 +1,4 @@
-
+//! 1-
 // const sayi1 = +prompt ("Lütfen ilk sayiyi giriniz.");
 // const sayi2 =  +prompt ("Lütfen ikinci sayiyi giriniz.");
 // const islem = prompt ("Lütfen islemlerden yalniz birini seciniz. *,+,-,/");
@@ -33,7 +33,7 @@
 //      console.log("Tebrikler bir deger elde ettiniz"); 
 //     }
 
-
+//! 2-
 // const age = 20;
 // const gender = "erkek";
 // const health = true;
@@ -52,7 +52,7 @@
 // : console.log("Askerlik yapamaz");
 
 
-// kullanıcıdan not isteyelim 50 ve üstüyse başarılı, altıysa başarısız olsun.
+//! 3- Kullanıcıdan not isteyelim 50 ve üstüyse başarılı, altıysa başarısız olsun.
 
 // const not = prompt ("Lütfen notunuzu giriniz");
 
@@ -115,7 +115,7 @@
 // console.log(`${num1} ${islem} ${num2} eder`);
 
 
-//? ornek: maasınız asgari ücretten düşük ve eşitse maaşınıza %25 zam yapılsın, değilse maaşınıza %10 zam yapılsın. Ternary ile cözünüz.
+//! 4-  Maasınız asgari ücretten düşük ve eşitse maaşınıza %25 zam yapılsın, değilse maaşınıza %10 zam yapılsın. Ternary ile cözünüz.
 
 // const mindestLohn = 17000;
 // const gehalt = +prompt("Geben Sie Ihrem Gehalt ein");
@@ -134,7 +134,7 @@
 
 
 
-// ?Ornek:10 aylık maasınız borcunuzdan 5000 ve üstü kadar fazlaysa kredi alabilirsiniz, aksi durumda alamazsınız.
+//! 5- 10 aylık maasınız borcunuzdan 5000 ve üstü kadar fazlaysa kredi alabilirsiniz, aksi durumda alamazsınız.
 
 // let gehalt = +prompt ("Geben Sie Ihrem Gehalt ein");
 // let schuld = 30000
@@ -144,7 +144,7 @@
 
 
 
-//? ORNEK2: console'dan 3 tamsayi alarak bunlarin en buyugunu yazdiriniz.
+//! 6- Console'dan 3 tamsayi alarak bunlarin en buyugunu yazdiriniz.
 
 // const num1 = prompt ("Geben Sie erste Zahl ein");
 // const num2 = prompt ("Geben Sie zweite Zahl ein");
@@ -162,7 +162,7 @@
 // console.log(derGrößte);
 
 
-//? Ekrana 10 kez merhaba yazdirin.
+//! 7- Ekrana 10 kez merhaba yazdirin.
 
 
 
@@ -172,7 +172,7 @@
 //   console.error("yanlis");
 // }
 
-//? 1 den N e kadar sayilarin toplami?
+//! 8- 1 den N e kadar sayilarin toplami?
 
 // let N = +prompt ("Lütfen bir sayi giriniz")
 // let toplam = 0;
@@ -181,7 +181,7 @@
 //   console.log(toplam);
 // }
 
-//? ÖRNEK: Dışarıdan girilen sayının Asal olup olmadığını tespit ederek sonucu yazdıran programı yazınız.
+//! 9- Dışarıdan girilen sayının Asal olup olmadığını tespit ederek sonucu yazdıran programı yazınız.
 
 // let num = +prompt ("Geben Sie ein Zahl ein.");
 // let primeNumber = true;
@@ -197,15 +197,16 @@
 // console.log(primeNumber ? "asaldir" : "asal degildir.");
 
 
-//? 0-100 Arasinda 7 adet rastgele tam sayi üreten kodu for döngüsü ile yaziniz.
+//! 10-   0-100 Arasinda 7 adet rastgele tam sayi üreten kodu for döngüsü ile yaziniz.
 
 // for (let i = 1; i<= 7; i++){
 //    let rastgele = Math.round(Math.random()*100);
 //    console.log(rastgele);
 // }
 
-//****************** */ WHİLE*************
-//*ORNEK1: while için 1-100  arasında bir sayı giriniz. aksi durumlarda error msj ı verip, tekrar sayı isteyiniz.
+//****************** */ WHİLE*************/
+
+//! 11- While için 1-100  arasında bir sayı giriniz. aksi durumlarda error msj ı verip, tekrar sayı isteyiniz.
 
 // let num = prompt ("Geben Sie ein Zahl ein.")
 // while (num<1 || num >100){
@@ -216,7 +217,7 @@
 
 
 //****************** */ DO-WHİLE*************
-//*ORNEK1: do-while için 1-100  arasında bir sayı giriniz. aksi durumlarda alert verip, tekrar sayı isteyiniz.
+//! 12-  do-while için 1-100  arasında bir sayı giriniz. aksi durumlarda alert verip, tekrar sayı isteyiniz.
 
 // let num;
 // do {
@@ -226,11 +227,8 @@
 
 // console.log("Herzlichen Glückwunsch, die Zahl liegt zwischen 1 und 100.");
 
-//? ORNEK: Kullanicidan  Vize ve Final notlarini isteyen ve
-//? vize'nin %40 + final'in %60 alarak gecme notunu hesaplayan programi
-//? yaziniz. Program her hesaplamadan sonra tekrar başkası için hesaplama yapilmak
-//? istenip istenmedigini soracak cevap 'e' veya 'E' ise yeniden not
-//? isteyecek ve islemleri tekrar edecektir.
+//! 13- Kullanicidan  Vize ve Final notlarini isteyen ve
+//! vize'nin %40 + final'in %60 alarak gecme notunu hesaplayan programi yaziniz. Program her hesaplamadan sonra tekrar başkası için hesaplama yapilmak istenip istenmedigini soracak cevap 'e' veya 'E' ise yeniden not isteyecek ve islemleri tekrar edecektir.
 
 // let weiter;
 // do {
@@ -244,7 +242,7 @@
 // } while (weiter.toLowerCase() == "e");
 
 
-//? ORNEK3: klavyeden q karakteri girilene kadar sayı girişi isteyen bir programı döngü kullanarak yazınız.
+//! 14- Klavyeden q karakteri girilene kadar sayı girişi isteyen bir programı döngü kullanarak yazınız.
 
 // let num;
 // let bis;
@@ -257,9 +255,9 @@
 // console.log("Du bist nicht auf der Schleife.");
 
 
-//!!GUESS NUMBER
+//! 15- GUESS NUMBER
 
-//* Program 1*20 arasında rasgele bir sayı tutacak ve kullanıcının bu sayıyı 5 kere(hak) de bilmesini isteyecektir. Her yanlışta hakkını bir düşürecek ve ARTTIR/AZALT diyerek kullanıcıyı yönlendirecektir.Sonuç olarak kullanıcının hakkı 0 olursa "Üzgünüz bilemediniz" eğer 5 hak içinde bildi ise "Tebrikler  bildiniz" yazacaktır.
+//! 15- Program 1*20 arasında rasgele bir sayı tutacak ve kullanıcının bu sayıyı 5 kere(hak) de bilmesini isteyecektir. Her yanlışta hakkını bir düşürecek ve ARTTIR/AZALT diyerek kullanıcıyı yönlendirecektir.Sonuç olarak kullanıcının hakkı 0 olursa "Üzgünüz bilemediniz" eğer 5 hak içinde bildi ise "Tebrikler  bildiniz" yazacaktır.
 
 // const rastgele = Math.ceil(Math.random()*20);
 // console.log(rastgele);
@@ -314,6 +312,7 @@
 // console.log(summe / zaehler);
 
 
+//! 16- Ücgenin Alanini hesaplayin.
 
 // let breite = prompt ("Geben Sie breite ein");
 // let höhe = prompt("Geben Sie höhe ein.");
@@ -324,6 +323,8 @@
 
 // console.log(dreieck (breite, höhe));
 
+//! 17- Tek mi cift mi hesaplayiniz.
+
 //  console.log(isEvenOdd (6)); 
 
 // function isEvenOdd (sayi) {
@@ -333,6 +334,8 @@
 
 // }
 
+
+//! 18- 
 // function summAll () {
 
 // console.log(arguments);
@@ -343,6 +346,7 @@
 
 // summAll (24, 34,56,35,12,89,23,45,78,98)
 
+//! 19- Kare,Küp ve Üs aliniz.
 
 // const kareAl = (a) => a*a;
 // console.log(kareAl(6));
@@ -353,62 +357,211 @@
 // const üsAl = (c) => c**5;
 // console.log(üsAl(2));
 
+//! 20- Artik yil hesabi yapiniz. 
+
+// const schaltJahr = function (jahr) {
+
+//   if(jahr % 4 == 0 && jahr % 100 != 0 || jahr % 400 == 0 ){
+//     console.log(`${jahr} artik yildir. 🌸`);
+//   }
+//   else {
+//     console.log(`${jahr} artik yil degildir.🤗`);
+
+//   }
+
+// }
+
+// schaltJahr(2005); 
+
+//! 21- Bir dairenin alanini ve cevresini bulan fonksiyonu yaziniz. Cevre (perimeter) 2*pi*r / alan (area) pi*r**2
+
+// function areaPerimeter (r) {
+
+
+// let area = Math.PI * r ** 2  ;
+// let perimeter = 2 * Math.PI * r;
+
+// return (`${area.toFixed(2)} area, ${perimeter.toFixed(2)} perimeter`);
+
+// }
+
+
+// console.log( areaPerimeter(5));
+
+
+//! 22- Bir dizedeki belirli bir harfin sayisini bulan bir fonksiyon yazin.
+
+
+// function harfSayisiBul(metin, harf) {
+//   let sayac = 0;
+//   for (let i = 0; i < metin.length; i++) {
+//       if (metin[i] === harf) {
+//           sayac++;
+//       }
+//   }
+//   return sayac;
+// }
+
+// console.log(harfSayisiBul("merhaba dünya", "e"));  
+// console.log(harfSayisiBul("JavaScript", "a"));  
+
+//! 23- Bir dizeden belirli sayıda karakteri çıkarmak için bir fonksiyon yazın.
+
+// function kisaltma (str){
+
+//   let result = str.substr (5,5)
+
+//  return result
+// }
+
+//  console.log(kisaltma("Ayca Kübra")); // Kübra
+
+
+// let str = "Once a day";
+// let index = str.indexOf("a");
+// console.log(index);
+// let index2 = str.lastIndexOf("a");
+// console.log(index2);
+
+// console.log(str.indexOf("a", index + 1) === index2);
 
 
 
+//! 24- let string="alti,bir,iki,dört,beş,üç,yedi,sekiz,dokuz" >  bu hale 612453789  dönüştüren programi yaziniz.
+
+let string = "alti,bir,iki,dört,beş,üç,yedi,sekiz,dokuz";
+
+const numberMap = {
+  "bir": "1",
+  "iki": "2",
+  "üç": "3",
+  "dört": "4",
+  "beş": "5",
+  "alti": "6",
+  "yedi": "7",
+  "sekiz": "8",
+  "dokuz": "9"
+};
+
+const wordsArray = string.split(",");
+
+let numbersArray = wordsArray.map(word => numberMap[word]);
+
+let result = numbersArray.join("");
+console.log(result); // 612453789
 
 
+//! 25- Bir öğe dizisini alan, tüm yinelenen öğeleri kaldıran ve eski diziyle aynı sırada yeni bir dizi döndüren bir fonksiyon oluşturan program yazin.
 
 
+const array = [1, 2, 3, 2, 2, 4, 3, 5];
 
+function entfernenDuplikate (array) {
+    let neuArray = [];
 
+    for (let element of array) {
+        if (!neuArray.includes(element)) {
+            neuArray.push(element);
+        }
+    }
 
-
-
-
-
-// 1.Yol Decleration
-
-function square (number){
-  return number * number;
+    return neuArray;
 }
 
- console.log(square(4)); 
+console.log(entfernenDuplikate(array)); //(5) [1, 2, 3, 4, 5]
 
 
- //2.Yol Arrow
+const pen = {}
 
+pen.ink ="blue";
 
- const kareAl = (nummer) => nummer * nummer;
- console.log(kareAl(5));
-
-
- //What will be the output of the following code?
-let y = 5;
-function changeValue(newValue) {
- let y = newValue;
+if(pen["ink"]) {
+    console.log(`Color is ${pen["ink"]}`)
 }
-changeValue(10); // return olmadigi icin icerdeki let y yi göremiyor. 
-console.log(y)
-
-
-//What will be the output of the following code?
-function outer() {
- let x = 10;
- function inner() {
- return x * 2;
- }
- return inner;
+else {
+    console.log("Color is undefined");
 }
-let fn = outer();
-console.log(fn());
 
 
-function test() {
-  return;
- }
- console.log(test());
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//! 13- Size bir dizi kelime verildi. "Nemo" kelimesini bulmanız ve şuna benzer bir dize döndürmeniz gerekir: 
+//? "[Nemo'yu bulduğunuz kelimenin sırası] 'nda Nemo'yu buldum!"
+
+//? Nemo'yu bulamıyorsanız, "I can't find Nemo :(" yazın.
+
+//? findNemo("I am finding Nemo !") ➞ "I found Nemo at 4!"
+
+//? findNemo("Nemo is me") ➞ "I found Nemo at 1!"
+
+//? findNemo("I Nemo am") ➞ "I found Nemo at 2!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const fiyatlar = [100,250,50,89];
+
+const zamliFiyatlar = fiyatlar.map((a)=>Math.ceil(a*1.1));
+console.log(zamliFiyatlar); //(4) [111, 275, 56, 98]
+
+fiyatlar.filter((a)=> a>90).forEach((a)=>console.log(a)) // 100,250
+
+fiyatlar.filter((a)=>a<110).map((a)=>Math.ceil(a*1.1)).forEach((a)=>console.log(a)); // 111,56,98
+
+
+
+const maaslar= [3000,5000,4000,6000,6500];
+
+const zamliMaas = maaslar.filter((a)=>a<4000).map((a)=>a*1.5);
+console.log(zamliMaas); // [4500]
+
+const zamliMaas2 = maaslar.filter((a)=>a>4000).map((a)=>a*1.25);
+console.log(zamliMaas2); //(3) [6250, 7500, 8125]
+
+
+
+
+
+
 
  
 
