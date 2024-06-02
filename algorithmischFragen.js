@@ -429,84 +429,70 @@
 
 //! 24- let string="alti,bir,iki,dört,beş,üç,yedi,sekiz,dokuz" >  bu hale 612453789  dönüştüren programi yaziniz.
 
-let string = "alti,bir,iki,dört,beş,üç,yedi,sekiz,dokuz";
+// let string = "alti,bir,iki,dört,beş,üç,yedi,sekiz,dokuz";
 
-const numberMap = {
-  "bir": "1",
-  "iki": "2",
-  "üç": "3",
-  "dört": "4",
-  "beş": "5",
-  "alti": "6",
-  "yedi": "7",
-  "sekiz": "8",
-  "dokuz": "9"
-};
+// const numberMap = {
+//   "bir": "1",
+//   "iki": "2",
+//   "üç": "3",
+//   "dört": "4",
+//   "beş": "5",
+//   "alti": "6",
+//   "yedi": "7",
+//   "sekiz": "8",
+//   "dokuz": "9"
+// };
 
-const wordsArray = string.split(",");
+// const wordsArray = string.split(",");
 
-let numbersArray = wordsArray.map(word => numberMap[word]);
+// let numbersArray = wordsArray.map(word => numberMap[word]);
 
-let result = numbersArray.join("");
-console.log(result); // 612453789
+// let result = numbersArray.join("");
+// console.log(result); // 612453789
 
 
 //! 25- Bir öğe dizisini alan, tüm yinelenen öğeleri kaldıran ve eski diziyle aynı sırada yeni bir dizi döndüren bir fonksiyon oluşturan program yazin.
 
 
-const array = [1, 2, 3, 2, 2, 4, 3, 5];
+// const array = [1, 2, 3, 2, 2, 4, 3, 5];
 
-function entfernenDuplikate (array) {
-    let neuArray = [];
+// function entfernenDuplikate (array) {
+//     let neuArray = [];
 
-    for (let element of array) {
-        if (!neuArray.includes(element)) {
-            neuArray.push(element);
-        }
-    }
+//     for (let element of array) {
+//         if (!neuArray.includes(element)) {
+//             neuArray.push(element);
+//         }
+//     }
 
-    return neuArray;
-}
+//     return neuArray;
+// }
 
-console.log(entfernenDuplikate(array)); //(5) [1, 2, 3, 4, 5]
-
-
-const pen = {}
-
-pen.ink ="blue";
-
-if(pen["ink"]) {
-    console.log(`Color is ${pen["ink"]}`)
-}
-else {
-    console.log("Color is undefined");
-}
+// console.log(entfernenDuplikate(array)); //(5) [1, 2, 3, 4, 5]
 
 
 
+// const fiyatlar = [100,250,50,89];
+
+// const zamliFiyatlar = fiyatlar.map((a)=>Math.ceil(a*1.1));
+// console.log(zamliFiyatlar); //(4) [111, 275, 56, 98]
+
+// fiyatlar.filter((a)=> a>90).forEach((a)=>console.log(a)) // 100,250
+
+// fiyatlar.filter((a)=>a<110).map((a)=>Math.ceil(a*1.1)).forEach((a)=>console.log(a)); // 111,56,98
 
 
 
+// const maaslar= [3000,5000,4000,6000,6500];
+
+// const zamliMaas = maaslar.filter((a)=>a<4000).map((a)=>a*1.5);
+// console.log(zamliMaas); // [4500]
+
+// const zamliMaas2 = maaslar.filter((a)=>a>4000).map((a)=>a*1.25);
+// console.log(zamliMaas2); //(3) [6250, 7500, 8125]
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//! 13- Size bir dizi kelime verildi. "Nemo" kelimesini bulmanız ve şuna benzer bir dize döndürmeniz gerekir: 
+//! 26- Size bir dizi kelime verildi. "Nemo" kelimesini bulmanız ve şuna benzer bir dize döndürmeniz gerekir: 
 //? "[Nemo'yu bulduğunuz kelimenin sırası] 'nda Nemo'yu buldum!"
 
 //? Nemo'yu bulamıyorsanız, "I can't find Nemo :(" yazın.
@@ -519,6 +505,67 @@ else {
 
 
 
+//! 27- Girilen .. terimdeki fibonacci sayisini bulduran fonksiyonu recursive ile kodlayiniz.
+
+const fibo = (n)=> {
+console.log(`fibo ${n} cagirildi`);
+if(n<=2){
+console.log(`fibo${n}=1`);
+return 1
+}
+else {
+const result = fibo(n-2)+ fibo(n-1)
+console.log(`fibo (${n}) = fibo(${n-2}) + fibo(${n-1}) = ${result}`);
+return result
+}
+
+}
+ console.log(fibo(4)); 
+
+
+//todo Strings Methodlari immutable / degismez,sabit
+
+
+const s4 = "merhaba ben ayca kübra"
+const s5 = "soruklu"
+const s6 = "haLlo"
+
+console.log(s4.concat(" ", s5)); //merhaba ben ayca kübra soruklu
+
+console.log(s4.charAt(s4.length-6)); // k
+
+console.log(s4.includes("a") ? "evet var" : "yok"); // evet var
+
+console.log(s6.search(/[A-Z]/)); //2 index döndürüyor. s6 nin icinde büyük harf nerde diye sordum.
+
+const cümle = "salina salina!";
+console.log(cümle.startsWith("sa")); //true // case sensitive var.
+console.log(cümle.startsWith("sa", 8)); //false 8. indexten itibaren sa ile basliyor mu?
+console.log(cümle.endsWith("!")); //true
+console.log(cümle.endsWith("salina",13)); // 13 ile biten yerde salina ile bitis var mi? true 
+
+let oku = "Oku Johny gibi saf olma saf olma"
+console.log(oku.replace("saf olma", "akilli ol"));//Oku Johny gibi akilli ol saf olma
+
+//oku = oku.replace("saf olma", "akilli ol"); // yeni degiskene atadik let oku artik degisti buyüzden kalici oldu. Normalde kalici degildi.
+//console.log(oku);//Oku Johny gibi akilli ol saf olma 
+
+console.log(oku.replaceAll("saf olma","zeki ol")); //Oku Johny gibi zeki ol zeki ol. All ile tamamini degistirdik.
+
+console.log(oku.slice(10)); // 10. indexten sonrasini keser alir. gibi saf olma saf olma
+console.log(oku.slice(10,20)); // 10. indexten 20. indexe kadar olan yeri keser alir. 20. index dahil degil.  gibi saf o
+console.log(oku.substring(10,20)); // ayni görevi yapiyor slice ile .gibi saf o
+
+console.log(oku.split(" ")); // bosluklardan ayirarak stringi arraye cevirir. (7) ['Oku', 'Johny', 'gibi', 'saf', 'olma', 'saf', 'olma']
+console.log(oku.split("a")); // a lari siler ve a larin oldugu yerden ayirarak array yapar.
+console.log(oku.split("a",3)); // a lari siler ve a lardan ayirarak array yapar ve o arrayin ilk 3 elemanini getirir.
+
+const ramazan = "           Hos geldin ya Sehri Ramazan      ";
+console.log(ramazan.trim()); // bastaki ve sondaki bosluklari siliyor ve bosluksuz yazdiriyor. Hos geldin ya Sehri Ramazan.
+
+let abc = "             Clarusway Full Stack"
+abc = abc.trim().slice(0,9).toUpperCase()
+console.log(abc); //CLARUSWAY
 
 
 
@@ -526,36 +573,6 @@ else {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-const fiyatlar = [100,250,50,89];
-
-const zamliFiyatlar = fiyatlar.map((a)=>Math.ceil(a*1.1));
-console.log(zamliFiyatlar); //(4) [111, 275, 56, 98]
-
-fiyatlar.filter((a)=> a>90).forEach((a)=>console.log(a)) // 100,250
-
-fiyatlar.filter((a)=>a<110).map((a)=>Math.ceil(a*1.1)).forEach((a)=>console.log(a)); // 111,56,98
-
-
-
-const maaslar= [3000,5000,4000,6000,6500];
-
-const zamliMaas = maaslar.filter((a)=>a<4000).map((a)=>a*1.5);
-console.log(zamliMaas); // [4500]
-
-const zamliMaas2 = maaslar.filter((a)=>a>4000).map((a)=>a*1.25);
-console.log(zamliMaas2); //(3) [6250, 7500, 8125]
 
 
 
