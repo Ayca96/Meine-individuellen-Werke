@@ -83,3 +83,5 @@ console.log(meyveler.sort()); //(3) ['kiraz', 'mango', 'seftali'] ASCII ye göre
 
 const number =[8,7,9,6,5];
 console.log(number.sort((a,b)=>a-b)); //(5) [5, 6, 7, 8, 9] kücükten büyüge siraladi.
+
+
