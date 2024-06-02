@@ -523,49 +523,7 @@ return result
  console.log(fibo(4)); 
 
 
-//todo Strings Methodlari immutable / degismez,sabit
 
-
-const s4 = "merhaba ben ayca kübra"
-const s5 = "soruklu"
-const s6 = "haLlo"
-
-console.log(s4.concat(" ", s5)); //merhaba ben ayca kübra soruklu
-
-console.log(s4.charAt(s4.length-6)); // k
-
-console.log(s4.includes("a") ? "evet var" : "yok"); // evet var
-
-console.log(s6.search(/[A-Z]/)); //2 index döndürüyor. s6 nin icinde büyük harf nerde diye sordum.
-
-const cümle = "salina salina!";
-console.log(cümle.startsWith("sa")); //true // case sensitive var.
-console.log(cümle.startsWith("sa", 8)); //false 8. indexten itibaren sa ile basliyor mu?
-console.log(cümle.endsWith("!")); //true
-console.log(cümle.endsWith("salina",13)); // 13 ile biten yerde salina ile bitis var mi? true 
-
-let oku = "Oku Johny gibi saf olma saf olma"
-console.log(oku.replace("saf olma", "akilli ol"));//Oku Johny gibi akilli ol saf olma
-
-//oku = oku.replace("saf olma", "akilli ol"); // yeni degiskene atadik let oku artik degisti buyüzden kalici oldu. Normalde kalici degildi.
-//console.log(oku);//Oku Johny gibi akilli ol saf olma 
-
-console.log(oku.replaceAll("saf olma","zeki ol")); //Oku Johny gibi zeki ol zeki ol. All ile tamamini degistirdik.
-
-console.log(oku.slice(10)); // 10. indexten sonrasini keser alir. gibi saf olma saf olma
-console.log(oku.slice(10,20)); // 10. indexten 20. indexe kadar olan yeri keser alir. 20. index dahil degil.  gibi saf o
-console.log(oku.substring(10,20)); // ayni görevi yapiyor slice ile .gibi saf o
-
-console.log(oku.split(" ")); // bosluklardan ayirarak stringi arraye cevirir. (7) ['Oku', 'Johny', 'gibi', 'saf', 'olma', 'saf', 'olma']
-console.log(oku.split("a")); // a lari siler ve a larin oldugu yerden ayirarak array yapar.
-console.log(oku.split("a",3)); // a lari siler ve a lardan ayirarak array yapar ve o arrayin ilk 3 elemanini getirir.
-
-const ramazan = "           Hos geldin ya Sehri Ramazan      ";
-console.log(ramazan.trim()); // bastaki ve sondaki bosluklari siliyor ve bosluksuz yazdiriyor. Hos geldin ya Sehri Ramazan.
-
-let abc = "             Clarusway Full Stack"
-abc = abc.trim().slice(0,9).toUpperCase()
-console.log(abc); //CLARUSWAY
 
 
 
