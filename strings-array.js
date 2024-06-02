@@ -78,3 +78,5 @@ console.log(meyveler.reverse()); //(3) ['mango', 'seftali', 'kiraz'] diziyi dön
 
 console.log(meyveler[2].split("").reverse().join()); // z,a,r,i,k
 console.log(meyveler);
+
+console.log(meyveler.sort()); //(3) ['kiraz', 'mango', 'seftali'] ASCII ye göre alfabetik siraliyor.
